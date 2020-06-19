@@ -1,2 +1,2 @@
-# PET_multicentric_standardization
+# PET-Head-and-Neck-Standardization
  Standardization of multicentric PET data

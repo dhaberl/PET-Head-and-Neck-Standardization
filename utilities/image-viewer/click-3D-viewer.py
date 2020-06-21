@@ -1,5 +1,9 @@
 """
-Image Viewer for 3D Numpy arrays such as PET scans. The basic viewer will be extended so that the value of a voxel can
+Image Viewer for 3D Numpy arrays such as PET scans.
+
+Based on: https://matplotlib.org/gallery/animation/image_slices_viewer.html
+
+The basic viewer will be extended so that the value of a voxel can
 be saved in order to calculate the tumor-background-ratio (TBR) of a PET scan.
 
 Idea:

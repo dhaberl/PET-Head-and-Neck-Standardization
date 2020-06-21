@@ -1,5 +1,6 @@
 """
 Image Viewer for 3D Numpy arrays such as PET scans.
+Based on: https://matplotlib.org/gallery/animation/image_slices_viewer.html
 """
 
 

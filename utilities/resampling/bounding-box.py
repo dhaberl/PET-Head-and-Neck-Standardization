@@ -26,8 +26,6 @@ def main():
 
     dst_path = '/home/davidhaberl/PycharmProjects/MasterThesis/Data/Head-Neck-PET-CT/resampled-bb-3d-suv-pet-and-masks-prim-npy'
 
-    dilated = 10
-
     for cohort in sorted(os.listdir(path)):
         os.makedirs(os.path.join(dst_path, cohort), exist_ok=True)
 
@@ -41,13 +39,12 @@ def main():
                     # Get coordinates of bounding box
                     rmin, rmax, cmin, cmax, zmin, zmax = bounding_box(mask)
 
-                    # TODO: Clemens fragen -> ich glaube hier ist ein Denkfehler bzgl Bounding-Box u. Dilatieren und zwar: Masken werden dilatiert und dann die Bounding-Box gezogen oder?
-                    rmin = rmin - dilated
-                    rmax = rmax + dilated
-                    cmin = cmin - dilated
-                    cmax = cmax + dilated
-                    zmin = zmin - dilated
-                    zmax = zmax + dilated
+                    rmin = rmin
+                    rmax = rmax
+                    cmin = cmin
+                    cmax = cmax
+                    zmin = zmin
+                    zmax = zmax
 
                     # Create new array
                     # print(mask.shape)

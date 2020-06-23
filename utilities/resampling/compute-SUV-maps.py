@@ -57,19 +57,19 @@ for cohort in sorted(os.listdir(path)):
         try:
             # Get Scan Time
             scan_time = dcm.AcquisitionTime
-            if scan_time.endswith('.00'):  # TODO: is working, but not ideal solution because works. might work only for this dataset
+            if scan_time.endswith('.00'):  
                 scan_time = scan_time[:-3]
             # print(scan_time)
 
             # Get Start Time for the Radiopharmaceutical Injection
             injection_time = dcm.RadiopharmaceuticalInformationSequence[0].RadiopharmaceuticalStartTime
-            if injection_time.endswith('.00'):  # TODO: is working, but not ideal solution because works. might work only for this dataset
+            if injection_time.endswith('.00'):  
                 injection_time = injection_time[:-3]
             # print(injection_time)
 
             # Get Half Life for Radionuclide
             half_life = dcm.RadiopharmaceuticalInformationSequence[0].RadionuclideHalfLife
-            half_life = 6588  # TODO: is working, but not ideal solution because works. might work only for this dataset
+            half_life = 6588  
             # print(half_life)
 
             # Get Total dose injected for Radionuclide

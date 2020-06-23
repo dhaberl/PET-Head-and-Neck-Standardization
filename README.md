@@ -7,7 +7,7 @@ This repo intends to evaluate the impact of multicentric data on Radiomics studi
 For now, only preprocessing of the data has been done.  
 
 ## Dataset
-The dataset is an open dataset from The Cancer Imaging Archive (TCIA) and consists of 298 Head and Neck PET/CT scans from four different centers [1] [2].
+The dataset is an open dataset from *The Cancer Imaging Archive (TCIA)* and consists of 298 Head and Neck PET/CT scans from four different centers [1] [2].
 
 The dataset can be downloaded from:
  
